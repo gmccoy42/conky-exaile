@@ -1,0 +1,10 @@
+${voffset 10}
+${goto 70}${font Ubuntu:size=12,weight:bold}${color3}P${exec lua /home/gmccoy/conky/exaile_lua.lua 0}${alignr}${color2}${font Ubuntu:size=7,weight:bold}${color1}${if_up eth0}eth ${addr eth0} ${endif}${if_up wlan0}wifi ${addr wlan0}${endif}
+${voffset 10}
+${goto 40}${font Ubuntu:size=9,weight:normal}${color1}${exec lua /home/gmccoy/conky/exaile_lua.lua 1}
+${goto 40}${font Ubuntu:size=9,weight:normal}${color1}${exec lua /home/gmccoy/conky/exaile_lua.lua 2}
+${goto 40}${font Ubuntu:size=9,weight:normal}${color1}${exec lua /home/gmccoy/conky/exaile_lua.lua 3}
+${goto 40}${font Ubuntu:size=9,weight:normal}${color1}${exec lua /home/gmccoy/conky/exaile_lua.lua 4}
+${voffset 10}
+${goto 40}${execbar lua /home/gmccoy/conky/exaile_lua.lua 5}
+${goto 40}${font Ubuntu:size=9,weight:normal}${color1}${exec lua /home/gmccoy/conky/exaile_lua.lua 6}
