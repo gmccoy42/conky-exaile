@@ -22,7 +22,11 @@ end
 
 
 local input = tonumber(arg[1])
-tmp[5] = string.sub(str,string.find(str,":") + 1,x - 1)
-tmp[6] = tmp[5] .. "%"
-tmp[0] = string.sub(tmp[0], 3, string.len(str))
+tmp[5] = ""
+tmp[6] = ""
+tmp[5] = string.sub(str,string.find(str,":") + 1, string.find(str,"%%") + 1)
+
+tmp[6] = tmp[5]
+
+
 print(tmp[input])
